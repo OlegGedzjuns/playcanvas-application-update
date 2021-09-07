@@ -1,0 +1,24 @@
+{
+  "name": "playcanvas-application-update",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlegGedzjuns/playcanvas-application-update.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlegGedzjuns/playcanvas-application-update/issues"
+  },
+  "homepage": "https://github.com/OlegGedzjuns/playcanvas-application-update#readme",
+  "type": "module",
+  "dependencies": {
+    "playcanvas": "^1.46.4",
+    "webgl-mock-threejs": "^0.0.1"
+  }
+}
