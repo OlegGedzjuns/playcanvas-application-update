@@ -4,8 +4,11 @@ WebGLRenderingContext.prototype['getSupportedExtensions'] = function () {
     return [];
 };
 
-import { Application, createScript, Entity } from 'playcanvas';
 import HTMLCanvasElement from 'webgl-mock-threejs/src/HTMLCanvasElement.js';
+
+HTMLCanvasElement.prototype['removeEventListener'] = function() { };
+
+import { Application, createScript, Entity } from 'playcanvas';
 
 const scriptsApp = new Application(new HTMLCanvasElement());
 
@@ -59,3 +62,21 @@ app1.update(222);
 // 111: application 2
 // 222: application 1
 // 222: application 2
+
+app2.destroy();
+
+app1.update(333);
+
+// expected output
+// 333: application 1
+//
+// actual result
+// nothing
+
+app1.destroy();
+
+// expected result
+// app is destroyed
+//
+// actual result
+// error "Cannot read property 'destroy' of null" is thrown
