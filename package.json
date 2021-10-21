@@ -18,7 +18,7 @@
   "homepage": "https://github.com/OlegGedzjuns/playcanvas-application-update#readme",
   "type": "module",
   "dependencies": {
-    "playcanvas": "^1.46.4",
+    "playcanvas": "^1.48.0",
     "webgl-mock-threejs": "^0.0.1"
   }
 }
